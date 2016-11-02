@@ -225,6 +225,9 @@ class Grid extends egret.DisplayObjectContainer{
             var OneP:One=new One();
             OneP.x=grid[i].x;   
             OneP.y=grid[i].y;  
+
+
+            
             OneP.x=grid[i].x*64;   
             OneP.y=grid[i].y*64; 
             OneP.walkable = grid[i].walkable;
