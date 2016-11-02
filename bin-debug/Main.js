@@ -42,7 +42,7 @@ var MyPlayer = (function (_super) {
         _super.call(this);
         this.nowState = 0;
         this.MySta = new StaMac;
-        this.MoveSpeed = 25;
+        this.MoveSpeed = 15;
         this.Modle = 0;
         this.IdleAni = new Array();
         this.MoveAni = new Array();
@@ -126,10 +126,10 @@ var MoveSta = (function () {
             var xx = this.Tx - this.Player.x;
             var yy = this.Ty - this.Player.y;
             if (xx > 0) {
-                this.Player.scaleX = -1;
+                this.Player.scaleX = 1;
             }
             else {
-                this.Player.scaleX = 1;
+                this.Player.scaleX = -1;
             }
             var zz = Math.pow(xx * xx + yy * yy, 0.5);
             var time = zz / this.Player.MoveSpeed;

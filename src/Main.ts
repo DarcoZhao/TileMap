@@ -46,7 +46,7 @@ class MyPlayer extends egret.DisplayObjectContainer {
     public nowState=0;
     public MyPhoto:egret.Bitmap;
     private MySta:StaMac=new StaMac;
-    public MoveSpeed:number=25;
+    public MoveSpeed:number=15;
     public Modle:number=0;
     public IdleAni:Array<egret.Texture>=new Array<egret.Texture>();
     public MoveAni:Array<egret.Texture>=new Array<egret.Texture>();
@@ -147,7 +147,7 @@ class MoveSta implements Sta{
             this.Ty=this.Path[this.nowNode].y;
             var xx=this.Tx- this.Player.x;
             var yy=this.Ty- this.Player.y;
-            if(xx>0){this.Player.scaleX=-1;}else{this.Player.scaleX=1;}
+            if(xx>0){this.Player.scaleX=1;}else{this.Player.scaleX=-1;}
             var zz=Math.pow(xx*xx+yy*yy,0.5);
             var time:number=zz/this.Player.MoveSpeed;
             this.timer = new egret.Timer(50, time);
@@ -307,7 +307,7 @@ class Main extends egret.DisplayObjectContainer {
      * Create a game scene
      */
     private createGameScene():void {
-        var bg:egret.Bitmap = this.createBitmapByName("Sky_jpeg");
+        var bg:egret.Bitmap = this.createBitmapByName("Sky_jpg");
         this.addChild(bg);
         var stageW:number = this.stage.stageWidth;
         var stageH:number = this.stage.stageHeight;
