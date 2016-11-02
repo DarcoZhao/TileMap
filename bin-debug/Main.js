@@ -295,8 +295,8 @@ var Main = (function (_super) {
         var ep = new Point();
         sp.x = this.Player.x;
         sp.y = this.Player.y;
-        ep.x = Math.floor(evt.stageX / 64);
-        ep.y = Math.floor(evt.stageY / 64);
+        ep.x = evt.stageX;
+        ep.y = evt.stageY;
         var As = new Astar(sp, ep);
         this.Player.Move(As.Ps, 10, 10); //?????
         //this.Player.Move(As.Ps);  
