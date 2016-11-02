@@ -33,10 +33,67 @@ var playerAni =[
     {tag:0,name: "Idle2_png"},
     {tag:0,name: "Idle3_png"},
     {tag:0,name: "Idle4_png"},
+
+
     {tag:1,name: "Walk1_png"},
     {tag:1,name: "Walk2_png"},
     {tag:1,name: "Walk3_png"},
     {tag:1,name: "Walk4_png"},
+
+
+
+    /*
+    {tag:0,name: "IdleAni1_png"},
+    {tag:0,name: "IdleAni2_png"},
+    {tag:0,name: "IdleAni3_png"},
+    {tag:0,name: "IdleAni4_png"},
+    {tag:0,name: "IdleAni5_png"},
+    {tag:0,name: "IdleAni6_png"},
+    {tag:0,name: "IdleAni7_png"},
+    {tag:0,name: "IdleAni8_png"},
+
+    {tag:1,name: "Walk (1)_png"},
+    {tag:1,name: "Walk (2)_png"},
+    {tag:1,name: "Walk (3)_png"},
+    {tag:1,name: "Walk (4)_png"},
+    {tag:1,name: "Walk (5)_png"},
+    {tag:1,name: "Walk (6)_png"},
+    {tag:1,name: "Walk (7)_png"},
+    {tag:1,name: "Walk (8)_png"},
+    {tag:1,name: "Walk (9)_png"},
+    {tag:1,name: "Walk (10)_png"},
+    {tag:1,name: "Walk (11)_png"},
+    {tag:1,name: "Walk (12)_png"},
+    {tag:1,name: "Walk (13)_png"},
+    {tag:1,name: "Walk (14)_png"},
+    {tag:1,name: "Walk (15)_png"},
+    {tag:1,name: "Walk (16)_png"},
+    {tag:1,name: "Walk (17)_png"},
+    {tag:1,name: "Walk (18)_png"},
+    {tag:1,name: "Walk (19)_png"},
+    {tag:1,name: "Walk (20)_png"},
+    {tag:1,name: "Walk (21)_png"},
+    {tag:1,name: "Walk (22)_png"},
+    {tag:1,name: "Walk (23)_png"},
+    {tag:1,name: "Walk (24)_png"},
+    {tag:1,name: "Walk (25)_png"},
+    {tag:1,name: "Walk (26)_png"},
+    {tag:1,name: "Walk (27)_png"},
+    {tag:1,name: "Walk (28)_png"},
+    {tag:1,name: "Walk (29)_png"},
+    {tag:1,name: "Walk (30)_png"},
+    {tag:1,name: "Walk (31)_png"},
+    {tag:1,name: "Walk (32)_png"},
+    {tag:1,name: "Walk (33)_png"},
+    {tag:1,name: "Walk (34)_png"},
+    {tag:1,name: "Walk (35)_png"},
+    {tag:1,name: "Walk (36)_png"},
+    {tag:1,name: "Walk (37)_png"},
+    {tag:1,name: "Walk (38)_png"},
+    */
+
+
+
 ]
 
 
@@ -46,7 +103,7 @@ class MyPlayer extends egret.DisplayObjectContainer {
     public nowState=0;
     public MyPhoto:egret.Bitmap;
     private MySta:StaMac=new StaMac;
-    public MoveSpeed:number=15;
+    public MoveSpeed:number=20;
     public Modle:number=0;
     public IdleAni:Array<egret.Texture>=new Array<egret.Texture>();
     public MoveAni:Array<egret.Texture>=new Array<egret.Texture>();
@@ -307,7 +364,7 @@ class Main extends egret.DisplayObjectContainer {
      * Create a game scene
      */
     private createGameScene():void {
-        var bg:egret.Bitmap = this.createBitmapByName("Sky_jpg");
+        var bg:egret.Bitmap = this.createBitmapByName("Sky_jpeg");
         this.addChild(bg);
         var stageW:number = this.stage.stageWidth;
         var stageH:number = this.stage.stageHeight;

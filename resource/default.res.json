@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "description_json,Sky_jpeg,Idle1_png,Idle2_png,Idle3_png,Idle4_png,Walk1_png,Walk2_png,Walk3_png,Walk4_png,Bg_01_png,Bg_02_png,Bg_03_png,Bg_04_png,Bg_05_png,Bg_06_png,Bg_07_png,Bg_08_png,Bg_09_png,Bg_10_png,Bg_100_png,Bg_101_png,Bg_102_png,Bg_103_png,Bg_104_png,Bg_105_png,Bg_106_png,Bg_107_png,Bg_108_png,Bg_109_png,Bg_11_png,Bg_110_png,Bg_111_png,Bg_112_png,Bg_113_png,Bg_114_png,Bg_115_png,Bg_116_png,Bg_117_png,Bg_118_png,Bg_119_png,Bg_12_png,Bg_120_png,Bg_121_png,Bg_122_png,Bg_123_png,Bg_124_png,Bg_125_png,Bg_126_png,Bg_127_png,Bg_128_png,Bg_129_png,Bg_13_png,Bg_130_png,Bg_131_png,Bg_132_png,Bg_133_png,Bg_134_png,Bg_135_png,Bg_136_png,Bg_137_png,Bg_138_png,Bg_139_png,Bg_14_png,Bg_140_png,Bg_141_png,Bg_142_png,Bg_143_png,Bg_144_png,Bg_145_png,Bg_146_png,Bg_147_png,Bg_148_png,Bg_149_png,Bg_15_png,Bg_150_png,Bg_151_png,Bg_152_png,Bg_153_png,Bg_154_png,Bg_155_png,Bg_156_png,Bg_157_png,Bg_158_png,Bg_159_png,Bg_16_png,Bg_160_png,Bg_161_png,Bg_162_png,Bg_163_png,Bg_164_png,Bg_165_png,Bg_166_png,Bg_167_png,Bg_168_png,Bg_169_png,Bg_17_png,Bg_170_png,Bg_18_png,Bg_19_png,Bg_20_png,Bg_21_png,Bg_22_png,Bg_23_png,Bg_24_png,Bg_25_png,Bg_26_png,Bg_27_png,Bg_28_png,Bg_29_png,Bg_30_png,Bg_31_png,Bg_32_png,Bg_33_png,Bg_34_png,Bg_35_png,Bg_36_png,Bg_37_png,Bg_38_png,Bg_39_png,Bg_40_png,Bg_41_png,Bg_42_png,Bg_43_png,Bg_44_png,Bg_45_png,Bg_46_png,Bg_47_png,Bg_48_png,Bg_49_png,Bg_50_png,Bg_51_png,Bg_52_png,Bg_53_png,Bg_54_png,Bg_55_png,Bg_56_png,Bg_57_png,Bg_58_png,Bg_59_png,Bg_60_png,Bg_61_png,Bg_62_png,Bg_63_png,Bg_64_png,Bg_65_png,Bg_66_png,Bg_67_png,Bg_68_png,Bg_69_png,Bg_70_png,Bg_71_png,Bg_72_png,Bg_73_png,Bg_74_png,Bg_75_png,Bg_76_png,Bg_77_png,Bg_78_png,Bg_79_png,Bg_80_png,Bg_81_png,Bg_82_png,Bg_83_png,Bg_84_png,Bg_85_png,Bg_86_png,Bg_87_png,Bg_88_png,Bg_89_png,Bg_90_png,Bg_91_png,Bg_92_png,Bg_93_png,Bg_94_png,Bg_95_png,Bg_96_png,Bg_97_png,Bg_98_png,Bg_99_png,Bg_180_png,Bg_171_png,Bg_172_png,Bg_173_png,Bg_174_png,Bg_175_png,Bg_176_png,Bg_177_png,Bg_178_png,Bg_179_png",
+			"keys": "description_json,Sky_jpeg,Idle2_png,Idle3_png,Idle4_png,Bg_01_png,Bg_02_png,Bg_03_png,Bg_04_png,Bg_05_png,Bg_06_png,Bg_07_png,Bg_08_png,Bg_09_png,Bg_10_png,Bg_100_png,Bg_101_png,Bg_102_png,Bg_103_png,Bg_104_png,Bg_105_png,Bg_106_png,Bg_107_png,Bg_108_png,Bg_109_png,Bg_11_png,Bg_110_png,Bg_111_png,Bg_112_png,Bg_113_png,Bg_114_png,Bg_115_png,Bg_116_png,Bg_117_png,Bg_118_png,Bg_119_png,Bg_12_png,Bg_120_png,Bg_121_png,Bg_122_png,Bg_123_png,Bg_124_png,Bg_125_png,Bg_126_png,Bg_127_png,Bg_128_png,Bg_129_png,Bg_13_png,Bg_130_png,Bg_131_png,Bg_132_png,Bg_133_png,Bg_134_png,Bg_135_png,Bg_136_png,Bg_137_png,Bg_138_png,Bg_139_png,Bg_14_png,Bg_140_png,Bg_141_png,Bg_142_png,Bg_143_png,Bg_144_png,Bg_145_png,Bg_146_png,Bg_147_png,Bg_148_png,Bg_149_png,Bg_15_png,Bg_150_png,Bg_151_png,Bg_152_png,Bg_153_png,Bg_154_png,Bg_155_png,Bg_156_png,Bg_157_png,Bg_158_png,Bg_159_png,Bg_16_png,Bg_160_png,Bg_161_png,Bg_162_png,Bg_163_png,Bg_164_png,Bg_165_png,Bg_166_png,Bg_167_png,Bg_168_png,Bg_169_png,Bg_17_png,Bg_170_png,Bg_18_png,Bg_19_png,Bg_20_png,Bg_21_png,Bg_22_png,Bg_23_png,Bg_24_png,Bg_25_png,Bg_26_png,Bg_27_png,Bg_28_png,Bg_29_png,Bg_30_png,Bg_31_png,Bg_32_png,Bg_33_png,Bg_34_png,Bg_35_png,Bg_36_png,Bg_37_png,Bg_38_png,Bg_39_png,Bg_40_png,Bg_41_png,Bg_42_png,Bg_43_png,Bg_44_png,Bg_45_png,Bg_46_png,Bg_47_png,Bg_48_png,Bg_49_png,Bg_50_png,Bg_51_png,Bg_52_png,Bg_53_png,Bg_54_png,Bg_55_png,Bg_56_png,Bg_57_png,Bg_58_png,Bg_59_png,Bg_60_png,Bg_61_png,Bg_62_png,Bg_63_png,Bg_64_png,Bg_65_png,Bg_66_png,Bg_67_png,Bg_68_png,Bg_69_png,Bg_70_png,Bg_71_png,Bg_72_png,Bg_73_png,Bg_74_png,Bg_75_png,Bg_76_png,Bg_77_png,Bg_78_png,Bg_79_png,Bg_80_png,Bg_81_png,Bg_82_png,Bg_83_png,Bg_84_png,Bg_85_png,Bg_86_png,Bg_87_png,Bg_88_png,Bg_89_png,Bg_90_png,Bg_91_png,Bg_92_png,Bg_93_png,Bg_94_png,Bg_95_png,Bg_96_png,Bg_97_png,Bg_98_png,Bg_99_png,Bg_180_png,Bg_171_png,Bg_172_png,Bg_173_png,Bg_174_png,Bg_175_png,Bg_176_png,Bg_177_png,Bg_178_png,Bg_179_png,Walk2_png,Walk3_png,Walk4_png,Walk1_png,Idle1_png,IdleAni1_png,IdleAni2_png,IdleAni3_png,IdleAni4_png,IdleAni5_png,IdleAni6_png,IdleAni7_png,IdleAni8_png,Walk (1)_png,Walk (10)_png,Walk (11)_png,Walk (12)_png,Walk (13)_png,Walk (14)_png,Walk (15)_png,Walk (16)_png,Walk (17)_png,Walk (18)_png,Walk (19)_png,Walk (2)_png,Walk (20)_png,Walk (21)_png,Walk (22)_png,Walk (23)_png,Walk (24)_png,Walk (25)_png,Walk (26)_png,Walk (27)_png,Walk (28)_png,Walk (29)_png,Walk (3)_png,Walk (30)_png,Walk (31)_png,Walk (32)_png,Walk (33)_png,Walk (34)_png,Walk (35)_png,Walk (36)_png,Walk (37)_png,Walk (38)_png,Walk (4)_png,Walk (5)_png,Walk (6)_png,Walk (7)_png,Walk (8)_png,Walk (9)_png",
 			"name": "preload"
 		}
 	],
@@ -17,11 +17,6 @@
 			"url": "assets/Sky.jpeg"
 		},
 		{
-			"name": "Idle1_png",
-			"type": "image",
-			"url": "assets/Idle1.png"
-		},
-		{
 			"name": "Idle2_png",
 			"type": "image",
 			"url": "assets/Idle2.png"
@@ -35,26 +30,6 @@
 			"name": "Idle4_png",
 			"type": "image",
 			"url": "assets/Idle4.png"
-		},
-		{
-			"name": "Walk1_png",
-			"type": "image",
-			"url": "assets/Walk1.png"
-		},
-		{
-			"name": "Walk2_png",
-			"type": "image",
-			"url": "assets/Walk2.png"
-		},
-		{
-			"name": "Walk3_png",
-			"type": "image",
-			"url": "assets/Walk3.png"
-		},
-		{
-			"name": "Walk4_png",
-			"type": "image",
-			"url": "assets/Walk4.png"
 		},
 		{
 			"name": "Bg_01_png",
@@ -955,6 +930,261 @@
 			"name": "Bg_179_png",
 			"type": "image",
 			"url": "assets/Bg/Bg_179.png"
+		},
+		{
+			"name": "Walk2_png",
+			"type": "image",
+			"url": "assets/Walk2.png"
+		},
+		{
+			"name": "Walk3_png",
+			"type": "image",
+			"url": "assets/Walk3.png"
+		},
+		{
+			"name": "Walk4_png",
+			"type": "image",
+			"url": "assets/Walk4.png"
+		},
+		{
+			"name": "Walk1_png",
+			"type": "image",
+			"url": "assets/Walk1.png"
+		},
+		{
+			"name": "Idle1_png",
+			"type": "image",
+			"url": "assets/Idle1.png"
+		},
+		{
+			"name": "IdleAni1_png",
+			"type": "image",
+			"url": "assets/Idle/IdleAni1.png"
+		},
+		{
+			"name": "IdleAni2_png",
+			"type": "image",
+			"url": "assets/Idle/IdleAni2.png"
+		},
+		{
+			"name": "IdleAni3_png",
+			"type": "image",
+			"url": "assets/Idle/IdleAni3.png"
+		},
+		{
+			"name": "IdleAni4_png",
+			"type": "image",
+			"url": "assets/Idle/IdleAni4.png"
+		},
+		{
+			"name": "IdleAni5_png",
+			"type": "image",
+			"url": "assets/Idle/IdleAni5.png"
+		},
+		{
+			"name": "IdleAni6_png",
+			"type": "image",
+			"url": "assets/Idle/IdleAni6.png"
+		},
+		{
+			"name": "IdleAni7_png",
+			"type": "image",
+			"url": "assets/Idle/IdleAni7.png"
+		},
+		{
+			"name": "IdleAni8_png",
+			"type": "image",
+			"url": "assets/Idle/IdleAni8.png"
+		},
+		{
+			"name": "Walk (1)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (1).png"
+		},
+		{
+			"name": "Walk (10)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (10).png"
+		},
+		{
+			"name": "Walk (11)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (11).png"
+		},
+		{
+			"name": "Walk (12)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (12).png"
+		},
+		{
+			"name": "Walk (13)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (13).png"
+		},
+		{
+			"name": "Walk (14)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (14).png"
+		},
+		{
+			"name": "Walk (15)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (15).png"
+		},
+		{
+			"name": "Walk (16)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (16).png"
+		},
+		{
+			"name": "Walk (17)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (17).png"
+		},
+		{
+			"name": "Walk (18)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (18).png"
+		},
+		{
+			"name": "Walk (19)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (19).png"
+		},
+		{
+			"name": "Walk (2)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (2).png"
+		},
+		{
+			"name": "Walk (20)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (20).png"
+		},
+		{
+			"name": "Walk (21)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (21).png"
+		},
+		{
+			"name": "Walk (22)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (22).png"
+		},
+		{
+			"name": "Walk (23)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (23).png"
+		},
+		{
+			"name": "Walk (24)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (24).png"
+		},
+		{
+			"name": "Walk (25)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (25).png"
+		},
+		{
+			"name": "Walk (26)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (26).png"
+		},
+		{
+			"name": "Walk (27)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (27).png"
+		},
+		{
+			"name": "Walk (28)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (28).png"
+		},
+		{
+			"name": "Walk (29)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (29).png"
+		},
+		{
+			"name": "Walk (3)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (3).png"
+		},
+		{
+			"name": "Walk (30)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (30).png"
+		},
+		{
+			"name": "Walk (31)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (31).png"
+		},
+		{
+			"name": "Walk (32)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (32).png"
+		},
+		{
+			"name": "Walk (33)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (33).png"
+		},
+		{
+			"name": "Walk (34)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (34).png"
+		},
+		{
+			"name": "Walk (35)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (35).png"
+		},
+		{
+			"name": "Walk (36)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (36).png"
+		},
+		{
+			"name": "Walk (37)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (37).png"
+		},
+		{
+			"name": "Walk (38)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (38).png"
+		},
+		{
+			"name": "Walk (4)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (4).png"
+		},
+		{
+			"name": "Walk (5)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (5).png"
+		},
+		{
+			"name": "Walk (6)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (6).png"
+		},
+		{
+			"name": "Walk (7)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (7).png"
+		},
+		{
+			"name": "Walk (8)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (8).png"
+		},
+		{
+			"name": "Walk (9)_png",
+			"type": "image",
+			"url": "assets/Walk/Walk (9).png"
 		}
 	]
 }

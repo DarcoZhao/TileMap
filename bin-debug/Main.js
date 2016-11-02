@@ -42,7 +42,7 @@ var MyPlayer = (function (_super) {
         _super.call(this);
         this.nowState = 0;
         this.MySta = new StaMac;
-        this.MoveSpeed = 15;
+        this.MoveSpeed = 20;
         this.Modle = 0;
         this.IdleAni = new Array();
         this.MoveAni = new Array();
