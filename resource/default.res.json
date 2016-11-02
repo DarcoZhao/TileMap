@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "description_json,Sky_jpeg,Idle1_png,Idle2_png,Idle3_png,Idle4_png,Walk1_png,Walk2_png,Walk3_png,Walk4_png,Bg_01_png,Bg_02_png,Bg_03_png,Bg_04_png,Bg_05_png,Bg_06_png,Bg_07_png,Bg_08_png,Bg_09_png,Bg_10_png,Bg_100_png,Bg_101_png,Bg_102_png,Bg_103_png,Bg_104_png,Bg_105_png,Bg_106_png,Bg_107_png,Bg_108_png,Bg_109_png,Bg_11_png,Bg_110_png,Bg_111_png,Bg_112_png,Bg_113_png,Bg_114_png,Bg_115_png,Bg_116_png,Bg_117_png,Bg_118_png,Bg_119_png,Bg_12_png,Bg_120_png,Bg_121_png,Bg_122_png,Bg_123_png,Bg_124_png,Bg_125_png,Bg_126_png,Bg_127_png,Bg_128_png,Bg_129_png,Bg_13_png,Bg_130_png,Bg_131_png,Bg_132_png,Bg_133_png,Bg_134_png,Bg_135_png,Bg_136_png,Bg_137_png,Bg_138_png,Bg_139_png,Bg_14_png,Bg_140_png,Bg_141_png,Bg_142_png,Bg_143_png,Bg_144_png,Bg_145_png,Bg_146_png,Bg_147_png,Bg_148_png,Bg_149_png,Bg_15_png,Bg_150_png,Bg_151_png,Bg_152_png,Bg_153_png,Bg_154_png,Bg_155_png,Bg_156_png,Bg_157_png,Bg_158_png,Bg_159_png,Bg_16_png,Bg_160_png,Bg_161_png,Bg_162_png,Bg_163_png,Bg_164_png,Bg_165_png,Bg_166_png,Bg_167_png,Bg_168_png,Bg_169_png,Bg_17_png,Bg_170_png,Bg_18_png,Bg_19_png,Bg_20_png,Bg_21_png,Bg_22_png,Bg_23_png,Bg_24_png,Bg_25_png,Bg_26_png,Bg_27_png,Bg_28_png,Bg_29_png,Bg_30_png,Bg_31_png,Bg_32_png,Bg_33_png,Bg_34_png,Bg_35_png,Bg_36_png,Bg_37_png,Bg_38_png,Bg_39_png,Bg_40_png,Bg_41_png,Bg_42_png,Bg_43_png,Bg_44_png,Bg_45_png,Bg_46_png,Bg_47_png,Bg_48_png,Bg_49_png,Bg_50_png,Bg_51_png,Bg_52_png,Bg_53_png,Bg_54_png,Bg_55_png,Bg_56_png,Bg_57_png,Bg_58_png,Bg_59_png,Bg_60_png,Bg_61_png,Bg_62_png,Bg_63_png,Bg_64_png,Bg_65_png,Bg_66_png,Bg_67_png,Bg_68_png,Bg_69_png,Bg_70_png,Bg_71_png,Bg_72_png,Bg_73_png,Bg_74_png,Bg_75_png,Bg_76_png,Bg_77_png,Bg_78_png,Bg_79_png,Bg_80_png,Bg_81_png,Bg_82_png,Bg_83_png,Bg_84_png,Bg_85_png,Bg_86_png,Bg_87_png,Bg_88_png,Bg_89_png,Bg_90_png,Bg_91_png,Bg_92_png,Bg_93_png,Bg_94_png,Bg_95_png,Bg_96_png,Bg_97_png,Bg_98_png,Bg_99_png",
+			"keys": "description_json,Sky_jpeg,Idle1_png,Idle2_png,Idle3_png,Idle4_png,Walk1_png,Walk2_png,Walk3_png,Walk4_png,Bg_01_png,Bg_02_png,Bg_03_png,Bg_04_png,Bg_05_png,Bg_06_png,Bg_07_png,Bg_08_png,Bg_09_png,Bg_10_png,Bg_100_png,Bg_101_png,Bg_102_png,Bg_103_png,Bg_104_png,Bg_105_png,Bg_106_png,Bg_107_png,Bg_108_png,Bg_109_png,Bg_11_png,Bg_110_png,Bg_111_png,Bg_112_png,Bg_113_png,Bg_114_png,Bg_115_png,Bg_116_png,Bg_117_png,Bg_118_png,Bg_119_png,Bg_12_png,Bg_120_png,Bg_121_png,Bg_122_png,Bg_123_png,Bg_124_png,Bg_125_png,Bg_126_png,Bg_127_png,Bg_128_png,Bg_129_png,Bg_13_png,Bg_130_png,Bg_131_png,Bg_132_png,Bg_133_png,Bg_134_png,Bg_135_png,Bg_136_png,Bg_137_png,Bg_138_png,Bg_139_png,Bg_14_png,Bg_140_png,Bg_141_png,Bg_142_png,Bg_143_png,Bg_144_png,Bg_145_png,Bg_146_png,Bg_147_png,Bg_148_png,Bg_149_png,Bg_15_png,Bg_150_png,Bg_151_png,Bg_152_png,Bg_153_png,Bg_154_png,Bg_155_png,Bg_156_png,Bg_157_png,Bg_158_png,Bg_159_png,Bg_16_png,Bg_160_png,Bg_161_png,Bg_162_png,Bg_163_png,Bg_164_png,Bg_165_png,Bg_166_png,Bg_167_png,Bg_168_png,Bg_169_png,Bg_17_png,Bg_170_png,Bg_18_png,Bg_19_png,Bg_20_png,Bg_21_png,Bg_22_png,Bg_23_png,Bg_24_png,Bg_25_png,Bg_26_png,Bg_27_png,Bg_28_png,Bg_29_png,Bg_30_png,Bg_31_png,Bg_32_png,Bg_33_png,Bg_34_png,Bg_35_png,Bg_36_png,Bg_37_png,Bg_38_png,Bg_39_png,Bg_40_png,Bg_41_png,Bg_42_png,Bg_43_png,Bg_44_png,Bg_45_png,Bg_46_png,Bg_47_png,Bg_48_png,Bg_49_png,Bg_50_png,Bg_51_png,Bg_52_png,Bg_53_png,Bg_54_png,Bg_55_png,Bg_56_png,Bg_57_png,Bg_58_png,Bg_59_png,Bg_60_png,Bg_61_png,Bg_62_png,Bg_63_png,Bg_64_png,Bg_65_png,Bg_66_png,Bg_67_png,Bg_68_png,Bg_69_png,Bg_70_png,Bg_71_png,Bg_72_png,Bg_73_png,Bg_74_png,Bg_75_png,Bg_76_png,Bg_77_png,Bg_78_png,Bg_79_png,Bg_80_png,Bg_81_png,Bg_82_png,Bg_83_png,Bg_84_png,Bg_85_png,Bg_86_png,Bg_87_png,Bg_88_png,Bg_89_png,Bg_90_png,Bg_91_png,Bg_92_png,Bg_93_png,Bg_94_png,Bg_95_png,Bg_96_png,Bg_97_png,Bg_98_png,Bg_99_png,Bg_180_png,Bg_171_png,Bg_172_png,Bg_173_png,Bg_174_png,Bg_175_png,Bg_176_png,Bg_177_png,Bg_178_png,Bg_179_png",
 			"name": "preload"
 		}
 	],
@@ -905,6 +905,56 @@
 			"name": "Bg_99_png",
 			"type": "image",
 			"url": "assets/Bg/Bg_99.png"
+		},
+		{
+			"name": "Bg_180_png",
+			"type": "image",
+			"url": "assets/Bg/Bg_180.png"
+		},
+		{
+			"name": "Bg_171_png",
+			"type": "image",
+			"url": "assets/Bg/Bg_171.png"
+		},
+		{
+			"name": "Bg_172_png",
+			"type": "image",
+			"url": "assets/Bg/Bg_172.png"
+		},
+		{
+			"name": "Bg_173_png",
+			"type": "image",
+			"url": "assets/Bg/Bg_173.png"
+		},
+		{
+			"name": "Bg_174_png",
+			"type": "image",
+			"url": "assets/Bg/Bg_174.png"
+		},
+		{
+			"name": "Bg_175_png",
+			"type": "image",
+			"url": "assets/Bg/Bg_175.png"
+		},
+		{
+			"name": "Bg_176_png",
+			"type": "image",
+			"url": "assets/Bg/Bg_176.png"
+		},
+		{
+			"name": "Bg_177_png",
+			"type": "image",
+			"url": "assets/Bg/Bg_177.png"
+		},
+		{
+			"name": "Bg_178_png",
+			"type": "image",
+			"url": "assets/Bg/Bg_178.png"
+		},
+		{
+			"name": "Bg_179_png",
+			"type": "image",
+			"url": "assets/Bg/Bg_179.png"
 		}
 	]
 }

@@ -26,7 +26,7 @@ var grid = [
 
     {x:0,y:2,walkable:true,img:"Bg_21_png"},
     {x:1,y:2,walkable:true,img:"Bg_22_png"},
-    {x:2,y:2,walkable:true,img:"Bg_23_png"},
+    {x:2,y:2,walkable:false,img:"Bg_23_png"},
     {x:3,y:2,walkable:true,img:"Bg_24_png"},
     {x:4,y:2,walkable:true,img:"Bg_25_png"},
     {x:5,y:2,walkable:true,img:"Bg_26_png"},
@@ -37,13 +37,13 @@ var grid = [
 
     {x:0,y:3,walkable:true,img:"Bg_31_png"},
     {x:1,y:3,walkable:true,img:"Bg_32_png"},
-    {x:2,y:3,walkable:true,img:"Bg_33_png"},
-    {x:3,y:3,walkable:true,img:"Bg_34_png"},
-    {x:4,y:3,walkable:true,img:"Bg_35_png"},
-    {x:5,y:3,walkable:true,img:"Bg_36_png"},
-    {x:6,y:3,walkable:true,img:"Bg_37_png"},
-    {x:7,y:3,walkable:true,img:"Bg_38_png"},
-    {x:8,y:3,walkable:true,img:"Bg_39_png"},
+    {x:2,y:3,walkable:false,img:"Bg_33_png"},
+    {x:3,y:3,walkable:false,img:"Bg_34_png"},
+    {x:4,y:3,walkable:false,img:"Bg_35_png"},
+    {x:5,y:3,walkable:false,img:"Bg_36_png"},
+    {x:6,y:3,walkable:false,img:"Bg_37_png"},
+    {x:7,y:3,walkable:false,img:"Bg_38_png"},
+    {x:8,y:3,walkable:false,img:"Bg_39_png"},
     {x:9,y:3,walkable:true,img:"Bg_40_png"},
 
     {x:0,y:4,walkable:true,img:"Bg_41_png"},
@@ -68,7 +68,7 @@ var grid = [
     {x:8,y:5,walkable:true,img:"Bg_59_png"},
     {x:9,y:5,walkable:true,img:"Bg_60_png"},
 
-    {x:0,y:6,walkable:true,img:"Bg_61_png"},
+    {x:0,y:6,walkable:false,img:"Bg_61_png"},
     {x:1,y:6,walkable:true,img:"Bg_62_png"},
     {x:2,y:6,walkable:true,img:"Bg_63_png"},
     {x:3,y:6,walkable:true,img:"Bg_64_png"},
@@ -79,11 +79,11 @@ var grid = [
     {x:8,y:6,walkable:true,img:"Bg_69_png"},
     {x:9,y:6,walkable:true,img:"Bg_70_png"},
 
-    {x:0,y:7,walkable:true,img:"Bg_71_png"},
-    {x:1,y:7,walkable:true,img:"Bg_72_png"},
-    {x:2,y:7,walkable:true,img:"Bg_73_png"},
-    {x:3,y:7,walkable:true,img:"Bg_74_png"},
-    {x:4,y:7,walkable:true,img:"Bg_75_png"},
+    {x:0,y:7,walkable:false,img:"Bg_71_png"},
+    {x:1,y:7,walkable:false,img:"Bg_72_png"},
+    {x:2,y:7,walkable:false,img:"Bg_73_png"},
+    {x:3,y:7,walkable:false,img:"Bg_74_png"},
+    {x:4,y:7,walkable:false,img:"Bg_75_png"},
     {x:5,y:7,walkable:true,img:"Bg_76_png"},
     {x:6,y:7,walkable:true,img:"Bg_77_png"},
     {x:7,y:7,walkable:true,img:"Bg_78_png"},
@@ -94,8 +94,8 @@ var grid = [
     {x:1,y:8,walkable:true,img:"Bg_82_png"},
     {x:2,y:8,walkable:true,img:"Bg_83_png"},
     {x:3,y:8,walkable:true,img:"Bg_84_png"},
-    {x:4,y:8,walkable:true,img:"Bg_85_png"},
-    {x:5,y:8,walkable:true,img:"Bg_86_png"},
+    {x:4,y:8,walkable:false,img:"Bg_85_png"},
+    {x:5,y:8,walkable:false,img:"Bg_86_png"},
     {x:6,y:8,walkable:true,img:"Bg_87_png"},
     {x:7,y:8,walkable:true,img:"Bg_88_png"},
     {x:8,y:8,walkable:true,img:"Bg_89_png"},
@@ -104,7 +104,7 @@ var grid = [
     {x:0,y:9,walkable:true,img:"Bg_91_png"},
     {x:1,y:9,walkable:true,img:"Bg_92_png"},
     {x:2,y:9,walkable:true,img:"Bg_93_png"},
-    {x:3,y:9,walkable:true,img:"Bg_94_png"},
+    {x:3,y:9,walkable:false,img:"Bg_94_png"},
     {x:4,y:9,walkable:true,img:"Bg_95_png"},
     {x:5,y:9,walkable:true,img:"Bg_96_png"},
     {x:6,y:9,walkable:true,img:"Bg_97_png"},
@@ -127,10 +127,10 @@ var grid = [
     {x:1,y:11,walkable:true,img:"Bg_112_png"},
     {x:2,y:11,walkable:true,img:"Bg_113_png"},
     {x:3,y:11,walkable:true,img:"Bg_114_png"},
-    {x:4,y:11,walkable:true,img:"Bg_115_png"},
-    {x:5,y:11,walkable:true,img:"Bg_116_png"},
-    {x:6,y:11,walkable:true,img:"Bg_117_png"},
-    {x:7,y:11,walkable:true,img:"Bg_118_png"},
+    {x:4,y:11,walkable:false,img:"Bg_115_png"},
+    {x:5,y:11,walkable:false,img:"Bg_116_png"},
+    {x:6,y:11,walkable:false,img:"Bg_117_png"},
+    {x:7,y:11,walkable:false,img:"Bg_118_png"},
     {x:8,y:11,walkable:true,img:"Bg_119_png"},
     {x:9,y:11,walkable:true,img:"Bg_120_png"},
 
@@ -138,10 +138,10 @@ var grid = [
     {x:1,y:12,walkable:true,img:"Bg_122_png"},
     {x:2,y:12,walkable:true,img:"Bg_123_png"},
     {x:3,y:12,walkable:true,img:"Bg_124_png"},
-    {x:4,y:12,walkable:true,img:"Bg_125_png"},
-    {x:5,y:12,walkable:true,img:"Bg_126_png"},
-    {x:6,y:12,walkable:true,img:"Bg_127_png"},
-    {x:7,y:12,walkable:true,img:"Bg_128_png"},
+    {x:4,y:12,walkable:false,img:"Bg_125_png"},
+    {x:5,y:12,walkable:false,img:"Bg_126_png"},
+    {x:6,y:12,walkable:false,img:"Bg_127_png"},
+    {x:7,y:12,walkable:false,img:"Bg_128_png"},
     {x:8,y:12,walkable:true,img:"Bg_129_png"},
     {x:9,y:12,walkable:true,img:"Bg_130_png"},
 
@@ -149,16 +149,16 @@ var grid = [
     {x:1,y:13,walkable:true,img:"Bg_132_png"},
     {x:2,y:13,walkable:true,img:"Bg_133_png"},
     {x:3,y:13,walkable:true,img:"Bg_134_png"},
-    {x:4,y:13,walkable:true,img:"Bg_135_png"},
-    {x:5,y:13,walkable:true,img:"Bg_136_png"},
-    {x:6,y:13,walkable:true,img:"Bg_137_png"},
+    {x:4,y:13,walkable:false,img:"Bg_135_png"},
+    {x:5,y:13,walkable:false,img:"Bg_136_png"},
+    {x:6,y:13,walkable:false,img:"Bg_137_png"},
     {x:7,y:13,walkable:true,img:"Bg_138_png"},
     {x:8,y:13,walkable:true,img:"Bg_139_png"},
     {x:9,y:13,walkable:true,img:"Bg_140_png"},
 
     {x:0,y:14,walkable:true,img:"Bg_141_png"},
-    {x:1,y:14,walkable:true,img:"Bg_142_png"},
-    {x:2,y:14,walkable:true,img:"Bg_143_png"},
+    {x:1,y:14,walkable:false,img:"Bg_142_png"},
+    {x:2,y:14,walkable:false,img:"Bg_143_png"},
     {x:3,y:14,walkable:true,img:"Bg_144_png"},
     {x:4,y:14,walkable:true,img:"Bg_145_png"},
     {x:5,y:14,walkable:true,img:"Bg_146_png"},
@@ -168,8 +168,8 @@ var grid = [
     {x:9,y:14,walkable:true,img:"Bg_150_png"},
 
     {x:0,y:15,walkable:true,img:"Bg_151_png"},
-    {x:1,y:15,walkable:true,img:"Bg_152_png"},
-    {x:2,y:15,walkable:true,img:"Bg_153_png"},
+    {x:1,y:15,walkable:false,img:"Bg_152_png"},
+    {x:2,y:15,walkable:false,img:"Bg_153_png"},
     {x:3,y:15,walkable:true,img:"Bg_154_png"},
     {x:4,y:15,walkable:true,img:"Bg_155_png"},
     {x:5,y:15,walkable:true,img:"Bg_156_png"},
@@ -188,6 +188,17 @@ var grid = [
     {x:7,y:16,walkable:true,img:"Bg_168_png"},
     {x:8,y:16,walkable:true,img:"Bg_169_png"},
     {x:9,y:16,walkable:true,img:"Bg_170_png"},    
+
+    {x:0,y:17,walkable:true,img:"Bg_171_png"},
+    {x:1,y:17,walkable:true,img:"Bg_172_png"},
+    {x:2,y:17,walkable:true,img:"Bg_173_png"},
+    {x:3,y:17,walkable:true,img:"Bg_174_png"},
+    {x:4,y:17,walkable:true,img:"Bg_175_png"},
+    {x:5,y:17,walkable:true,img:"Bg_176_png"},
+    {x:6,y:17,walkable:true,img:"Bg_177_png"},
+    {x:7,y:17,walkable:true,img:"Bg_178_png"},
+    {x:8,y:17,walkable:true,img:"Bg_179_png"},
+    {x:9,y:17,walkable:true,img:"Bg_180_png"}, 
 ]
 
 class Grid extends egret.DisplayObjectContainer{
@@ -206,6 +217,8 @@ class Grid extends egret.DisplayObjectContainer{
         result.texture = texture;
         return result;
     }
+
+    
     private Load() {
 
         for(var i=0;i<grid.length;i++) {
@@ -214,8 +227,11 @@ class Grid extends egret.DisplayObjectContainer{
             OneP.y=grid[i].y;  
             OneP.x=grid[i].x*64;   
             OneP.y=grid[i].y*64; 
+            OneP.walkable = grid[i].walkable;
+            var map = this.createBitmapByName(grid[i].img);
             this.ArrayGrid.push(OneP);
-            //this.addChild(OneP);
+            OneP.addChild(map);
+            this.addChild(OneP);
         }
     }  
 }

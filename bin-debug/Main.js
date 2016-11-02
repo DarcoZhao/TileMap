@@ -26,13 +26,23 @@
 //  EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 //////////////////////////////////////////////////////////////////////////////////////、
-var Pole = (function (_super) {
-    __extends(Pole, _super);
-    function Pole() {
+var playerAni = [
+    { tag: 0, name: "Idle1_png" },
+    { tag: 0, name: "Idle2_png" },
+    { tag: 0, name: "Idle3_png" },
+    { tag: 0, name: "Idle4_png" },
+    { tag: 1, name: "Walk1_png" },
+    { tag: 1, name: "Walk2_png" },
+    { tag: 1, name: "Walk3_png" },
+    { tag: 1, name: "Walk4_png" },
+];
+var MyPlayer = (function (_super) {
+    __extends(MyPlayer, _super);
+    function MyPlayer() {
         _super.call(this);
+        this.nowState = 0;
         this.MySta = new StaMac;
-        this.MoveSpeed = 20;
-        this.ChaTime = 150;
+        this.MoveSpeed = 25;
         this.Modle = 0;
         this.IdleAni = new Array();
         this.MoveAni = new Array();
@@ -42,62 +52,44 @@ var Pole = (function (_super) {
         this.anchorOffsetX = this.MyPhoto.width / 2;
         this.anchorOffsetY = this.MyPhoto.height / 2;
     }
-    var d = __define,c=Pole,p=c.prototype;
+    var d = __define,c=MyPlayer,p=c.prototype;
     p.LoadAni = function () {
-        var texture = RES.getRes("01_png");
-        this.IdleAni.push(texture);
-        texture = RES.getRes("02_png");
-        this.IdleAni.push(texture);
-        texture = RES.getRes("03_png");
-        this.IdleAni.push(texture);
-        texture = RES.getRes("04_png");
-        this.IdleAni.push(texture);
-        texture = RES.getRes("1_png");
-        this.MoveAni.push(texture);
-        texture = RES.getRes("2_png");
-        this.MoveAni.push(texture);
-        texture = RES.getRes("3_png");
-        this.MoveAni.push(texture);
-        texture = RES.getRes("4_png");
-        this.MoveAni.push(texture);
+        var texture;
+        for (var i = 0; i < playerAni.length; i++) {
+            texture = RES.getRes(playerAni[i].name);
+            if (playerAni[i].tag == 0) {
+                this.IdleAni.push(texture);
+            }
+            if (playerAni[i].tag == 1) {
+                this.MoveAni.push(texture);
+            }
+        }
     };
+    //不太懂？？
     p.PlayAni = function (Ani) {
         var count = 0;
         var Bit = this.MyPhoto;
         var M = this.Modle;
-        console.log("M:" + M);
+        //console.log("M:"+M);
         var timer = new egret.Timer(125, 0);
         timer.addEventListener(egret.TimerEvent.TIMER, Play, this);
         timer.start();
         function Play() {
             Bit.texture = Ani[count];
             if (count < Ani.length - 1) {
-                //   console.log(Ani.length+" "+count);
                 count++;
             }
             else {
                 count = 0;
             }
             if (this.Modle != M) {
-                console.log("tM:" + M + " nowM:" + this.Modle);
+                //console.log("tM:"+M+" nowM:"+this.Modle); 
                 timer.stop();
             }
         }
-        /* 帧动画一代目
-        PlayAni1();
-        var timer:egret.Timernew egret.Timer(100, time);
-            egret.Tween.get(Bit).wait(150).call(PlayAni2);
-        }
-        function PlayAni2(){
-            Bit.texture=Ani[count];
-            if(count<Ani.length-1){console.log(Ani.length+" "+count); count++;}
-            else{count=0;}
-            PlayAni1();
-       }
-       */
     };
-    p.Move = function (x, y) {
-        var MS = new MoveSta(x, y, this);
+    p.Move = function (Ps, xx, yy) {
+        var MS = new MoveSta(Ps, this);
         this.MySta.Reload(MS);
     };
     p.Idle = function () {
@@ -114,53 +106,64 @@ var Pole = (function (_super) {
         result.texture = texture;
         return result;
     };
-    return Pole;
+    return MyPlayer;
 }(egret.DisplayObjectContainer));
-egret.registerClass(Pole,'Pole');
+egret.registerClass(MyPlayer,'MyPlayer');
 var MoveSta = (function () {
-    function MoveSta(x, y, Player) {
-        this.Ty = y;
-        this.Tx = x;
+    function MoveSta(Ps, Player) {
+        this.ArriveListener = new egret.Sprite(); //Sprite是一个显示列表节点
+        this.Path = Ps;
         this.Player = Player;
     }
     var d = __define,c=MoveSta,p=c.prototype;
-    p.Load = function () {
+    p.Move = function () {
         var _this = this;
-        this.Player.Modle++;
-        var xx = this.Tx - this.Player.x;
-        var yy = this.Ty - this.Player.y;
-        if (xx > 0) {
-            this.Player.scaleX = 1;
+        this.nowNode++;
+        if (this.nowNode < this.Path.length) {
+            var M = this.Player.Modle;
+            this.Tx = this.Path[this.nowNode].x;
+            this.Ty = this.Path[this.nowNode].y;
+            var xx = this.Tx - this.Player.x;
+            var yy = this.Ty - this.Player.y;
+            if (xx > 0) {
+                this.Player.scaleX = -1;
+            }
+            else {
+                this.Player.scaleX = 1;
+            }
+            var zz = Math.pow(xx * xx + yy * yy, 0.5);
+            var time = zz / this.Player.MoveSpeed;
+            this.timer = new egret.Timer(50, time);
+            this.LeastTime = time;
+            this.timer.start();
+            this.timer.addEventListener(egret.TimerEvent.TIMER, function () {
+                _this.Player.x += xx / time;
+                _this.Player.y += yy / time;
+                _this.LeastTime--;
+                if (_this.LeastTime < 1) {
+                    _this.timer.stop();
+                    if (_this.LeastTime > -10) {
+                        _this.Move();
+                    } //意味着是走停不是逼停
+                }
+            }, this);
         }
         else {
-            this.Player.scaleX = -1;
+            this.Player.Idle();
+            return;
         }
-        var zz = Math.pow(xx * xx + yy * yy, 0.5);
-        //   console.log(xx+" "+yy);
-        var time = zz / this.Player.MoveSpeed;
-        this.timer = new egret.Timer(50, time);
-        this.LeastTime = time;
-        //   console.log("time:"+time);
-        this.timer.addEventListener(egret.TimerEvent.TIMER, function () {
-            _this.Player.x += xx / time;
-            _this.Player.y += yy / time;
-            _this.LeastTime--;
-            if (_this.LeastTime < 1) {
-                _this.timer.stop();
-                //        this.Player.Modle=-1;
-                //         console.log("1");
-                if (_this.LeastTime > -10) {
-                    _this.Player.Idle();
-                } //意味着是走停不是逼停
-            }
-        }, this);
-        this.timer.start();
+    };
+    p.Load = function () {
+        if (this.Path.length > 1)
+            this.nowNode = 1;
+        else
+            this.nowNode = 0;
+        this.Player.Modle++;
         this.Player.PlayAni(this.Player.MoveAni);
-        //     console.log("kaishiM");
+        this.Move();
     };
     p.exit = function () {
         this.LeastTime = -10;
-        //       console.log("exitM");
     };
     return MoveSta;
 }());
@@ -171,12 +174,12 @@ var IdleSta = (function () {
     }
     var d = __define,c=IdleSta,p=c.prototype;
     p.Load = function () {
-        //      console.log("Loadidle");
-        this.Player.Modle = 0;
+        this.Player.Modle++;
+        this.Player.nowState = 0;
         this.Player.PlayAni(this.Player.IdleAni);
     };
     p.exit = function () {
-        //  console.log("exitIdle");
+        console.log("exitIdle");
     };
     return IdleSta;
 }());
@@ -199,6 +202,7 @@ var Main = (function (_super) {
     __extends(Main, _super);
     function Main() {
         _super.call(this);
+        this.BgMap = new Grid();
         this.addEventListener(egret.Event.ADDED_TO_STAGE, this.onAddToStage, this);
     }
     var d = __define,c=Main,p=c.prototype;
@@ -270,37 +274,32 @@ var Main = (function (_super) {
      * Create a game scene
      */
     p.createGameScene = function () {
-        var sky = this.createBitmapByName("Sky_jpeg");
-        this.addChild(sky);
+        var bg = this.createBitmapByName("Sky_jpeg");
+        this.addChild(bg);
         var stageW = this.stage.stageWidth;
         var stageH = this.stage.stageHeight;
-        sky.width = stageW;
-        sky.height = stageH;
-        this.Player = new Pole();
+        bg.width = stageW;
+        bg.height = stageH;
+        this.BgMap = new Grid();
+        this.Player = new MyPlayer();
+        printMap(this.BgMap);
+        this.addChild(this.BgMap);
         this.addChild(this.Player);
-        this.Player.x = this.Player.y = 300;
+        this.Player.x = this.Player.y = 20;
         this.Player.Idle();
         this.touchEnabled = true;
-        this.addEventListener(egret.TouchEvent.TOUCH_TAP, this.Moveba, this);
-        /*
-                var textfield = new egret.TextField();
-                this.addChild(textfield);
-                textfield.alpha = 0;
-                textfield.width = stageW - 172;
-                textfield.textAlign = egret.HorizontalAlign.CENTER;
-                textfield.size = 24;
-                textfield.textColor = 0xffffff;
-                textfield.x = 172;
-                textfield.y = 135;
-                this.textfield = textfield;
-                //根据name关键字，异步获取一个json配置文件，name属性请参考resources/resource.json配置文件的内容。
-                // Get asynchronously a json configuration file according to name keyword. As for the property of name please refer to the configuration file of resources/resource.json.
-                RES.getResAsync("description", this.startAnimation, this)
-        */
+        this.addEventListener(egret.TouchEvent.TOUCH_TAP, this.Click, this);
     };
-    p.Moveba = function (evt) {
-        this.Player.Move(evt.stageX, evt.stageY);
-        //   console.log(evt.stageX+" "+evt.stageY);
+    p.Click = function (evt) {
+        var sp = new Point();
+        var ep = new Point();
+        sp.x = this.Player.x;
+        sp.y = this.Player.y;
+        ep.x = Math.floor(evt.stageX / 64);
+        ep.y = Math.floor(evt.stageY / 64);
+        var As = new Astar(sp, ep);
+        this.Player.Move(As.Ps, 10, 10); //?????
+        //this.Player.Move(As.Ps);  
     };
     /**
      * 根据name关键字创建一个Bitmap对象。name属性请参考resources/resource.json配置文件的内容。
@@ -316,30 +315,40 @@ var Main = (function (_super) {
      * 描述文件加载成功，开始播放动画
      * Description file loading is successful, start to play the animation
      */
-    p.startAnimation = function (result) {
-        var self = this;
+    //////////////////////////////////////////////////////////////////////////
+    /*
+    private startAnimation(result:Array<any>):void {
+        var self:any = this;
+
         var parser = new egret.HtmlTextParser();
-        var textflowArr = [];
-        for (var i = 0; i < result.length; i++) {
+        var textflowArr:Array<Array<egret.ITextElement>> = [];
+        for (var i:number = 0; i < result.length; i++) {
             textflowArr.push(parser.parser(result[i]));
         }
+
         var textfield = self.textfield;
         var count = -1;
-        var change = function () {
+        var change:Function = function () {
             count++;
             if (count >= textflowArr.length) {
                 count = 0;
             }
             var lineArr = textflowArr[count];
+
             self.changeDescription(textfield, lineArr);
+
             var tw = egret.Tween.get(textfield);
-            tw.to({ "alpha": 1 }, 200);
+            tw.to({"alpha": 1}, 200);
             tw.wait(2000);
-            tw.to({ "alpha": 0 }, 200);
+            tw.to({"alpha": 0}, 200);
             tw.call(change, self);
         };
+
         change();
-    };
+    }
+
+    */
+    //////////////////////////////////////////////////////////////////////
     /**
      * 切换描述内容
      * Switch to described content
@@ -350,4 +359,16 @@ var Main = (function (_super) {
     return Main;
 }(egret.DisplayObjectContainer));
 egret.registerClass(Main,'Main');
+var FinishWalkEvent = (function (_super) {
+    __extends(FinishWalkEvent, _super);
+    function FinishWalkEvent(type, bubbles, cancelable) {
+        if (bubbles === void 0) { bubbles = false; }
+        if (cancelable === void 0) { cancelable = false; }
+        _super.call(this, type, bubbles, cancelable);
+    }
+    var d = __define,c=FinishWalkEvent,p=c.prototype;
+    FinishWalkEvent.FW = "Finished";
+    return FinishWalkEvent;
+}(egret.Event));
+egret.registerClass(FinishWalkEvent,'FinishWalkEvent');
 //# sourceMappingURL=Main.js.map
